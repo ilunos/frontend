@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="col-lg-4 col-md-4">
+    <div class="social-box facebook">
+        <i class="fa fa-facebook">Images<br />
+
+          <span class="count"> {{ data['Images'] }}</span></i>
+
+    </div>
+    <!--/social-box-->
+</div><!--/.col-->
+
+
+<div class="col-lg-4 col-md-4">
+    <div class="social-box twitter">
+
+        <i class="fa fa-twitter">
+          Container<br />
+          <span class="count"> {{ data['Containers'] }}</span>
+        </i>
+
+    </div>
+    <!--/social-box-->
+</div><!--/.col-->
+
+
+<div class="col-lg-4 col-md-4">
+    <div class="social-box linkedin">
+        <i class="fa fa-linkedin">
+           Running Container<br />
+          <span class="count"> {{ data['Containers-Running'] }}</span>
+        </i>
+
+    </div>
+    <!--/social-box-->
+</div><!--/.col-->
+
+{% endblock %}
